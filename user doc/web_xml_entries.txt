@@ -1,0 +1,21 @@
+<servlet>
+		<servlet-name>AttachmentServlet</servlet-name>
+		<servlet-class>com.mobi.sembcorp.common.service.util.AttachmentServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>AttachmentServlet</servlet-name>
+		<url-pattern>/attachment/*</url-pattern>
+	</servlet-mapping>
+	
+	 <servlet>
+		<servlet-name>notification-serlvet</servlet-name>
+			<servlet-class>
+						 com.sun.jersey.spi.container.servlet.ServletContainer
+			</servlet-class>
+    </servlet>
+ 
+	<servlet-mapping>
+		<servlet-name>notification-serlvet</servlet-name>
+		<url-pattern>/mynotification/*</url-pattern>
+	</servlet-mapping>
